@@ -5,29 +5,7 @@ import com.anudip.hotelmanagement.repository.HotelRepository;
 
 public class HotelService implements HotelService1 {
 
-//	@Service
-//	public class StudentService {
-//		
-//		@Autowired
-//	    private HotelRepository repo;
-//		
-//		public List<Hotel> listAll() {
-//	        return repo.findAll();
-//	    }
-//	     
-//	    public void save(Hotel std) {
-//	        repo.save(std);
-//	    }
-//	     
-//	    public Hotel get(long id) {
-//	        return repo.findById(id).get();
-//	    }
-//	     
-//	    public void delete(long id) {
-//	        repo.deleteById(id);
-//	    }
-//
-//	}
+
 	
 	@Autowired
 	private HotelRepository hotelrepository;
