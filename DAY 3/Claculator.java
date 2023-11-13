@@ -6,31 +6,31 @@ DATE:- 13-11-2023
 class Claculator
 {
 
-	public static void add(int a,int b,int c,int d)
+	public static void add(int a,int b,int c,int d)//method called
 	{
 		int e = a+b+c+d;
 		System.out.println(e);
 	}
 
-	public static void sub(int a,int b,int c,int d,int e)
+	public static void sub(int a,int b,int c,int d,int e)//method called
 	{
 		int f = a-b-c-d-e;
 		System.out.println(f);
 	}
 
-	public static void mul(int a,int b,int c,int d,int e,int f)
+	public static void mul(int a,int b,int c,int d,int e,int f)//method called
 	{
 		int g = a*b*c*d*e*f;
 		System.out.println(g);
 	}
 
-	public static void div(int a,int b)
+	public static void div(int a,int b)//method called
 	{
 		int c = a/b;
 		System.out.println(c);
 	}
 
-	public static void main(String[] args) 
+	public static void main(String[] args)// calling method or main Main method
 	{
 		System.out.println("Hello World!");
 		add(90,80,70,50);
