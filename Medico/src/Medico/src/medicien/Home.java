@@ -1,10 +1,13 @@
 package medicien;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Home {
 	
-          static double Price;
+    static double Price;
+	static List list = new ArrayList();
 	
 			public void home()
 			{
@@ -38,7 +41,7 @@ public class Home {
 				case 2:
 				{
 					PersonalCare pc = new PersonalCare();
-					System.out.println(".....");
+					pc.display();
 					break;
 				}
 				
@@ -58,15 +61,16 @@ public class Home {
 				
 				case 5:
 				{
-					//Diabetes Care
-					System.out.println(".....");
+					DiabetesCare d = new DiabetesCare();
+					d.display();
+					
 					break;
 				}
 				
 				case 6:
 				{
-					//Healthcare Devices
-					System.out.println(".....");
+					HealthcareDevices hd = new HealthcareDevices();
+					hd.display();
 					break;
 				}
 				
@@ -78,12 +82,16 @@ public class Home {
 				}
 				case 8 :
 				{
+					System.out.println("=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*");
+					System.out.println("------❤️❤️ Thank You 💖💖--------");
+					System.out.println("(●'◡'●)   Vist Again.    (●'◡'●) ");
+					System.out.println("=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*");
 					System.exit(0);
 				}
 				
 				default : 
 				{
-					System.out.println("Enter valid Input .");
+					System.err.println("Enter valid Input .");
 					home();
 				}
 				
@@ -91,12 +99,5 @@ public class Home {
 				
 	
           } 
-	
-	
-	
-	
-	
-	
-	
 	
 }
